@@ -6,7 +6,7 @@ import plotly.express as xp
 title = st.set_page_config(page_icon="", page_title="Dashboard", layout="wide")
 st.markdown("""
             <style>
-            #Menu{
+            #MainMenu{
             visibility:hidden
             }
             </style>
