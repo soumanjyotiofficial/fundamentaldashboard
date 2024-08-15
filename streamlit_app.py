@@ -12,7 +12,10 @@ st.markdown("""
             #stActionButtonLabel{
             visibility:hidden
             }
-            /st-emotion-cache-30do4w .e3g6aar1{
+            .st-emotion-cache-30do4w .e3g6aar1{
+            visibility:hidden
+            }
+            header {
             visibility:hidden
             }
             </style>
