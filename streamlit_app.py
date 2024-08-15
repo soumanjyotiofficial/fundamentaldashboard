@@ -20,7 +20,7 @@ def extracting_date(name):
         data=pd.read_html(url)
         return data
     except:
-        return "No Such Company Data Found"
+        return None 
     
 
 def sales_data(data):
@@ -90,15 +90,15 @@ with col2:
 if submit_button:
     data = extracting_date(name)
     #st.markdown(f"""<script>alert({type(name)})</script>""", unsafe_allow_html=True)
-    if type(data) ==str(""):
+    if data:
         cols3, cols4 =st.columns(2)
-
         with cols3:
             st.title(f"{name.upper()} : {data}")
-            
+            sales_data(data)
     else:
         cols3, cols4 =st.columns(2)
         with cols3:
             st.title(f"{name.upper()} : {data}")
             sales_data(data)
+        
             
