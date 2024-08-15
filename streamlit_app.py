@@ -12,6 +12,9 @@ st.markdown("""
             #stActionButtonLabel{
             visibility:hidden
             }
+            /st-emotion-cache-30do4w .e3g6aar1{
+            visibility:hidden
+            }
             </style>
             
             """, unsafe_allow_html=True)
