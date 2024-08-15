@@ -3,6 +3,19 @@ import numpy as np
 import streamlit as st
 import requests as req
 import plotly.express as xp
+
+
+st.markdown("""
+
+
+            <style>
+            #Menu{
+            visibility:hidden
+            }
+            </style>
+            
+            """)
+
 def extracting_date(name):
     url = f"https://www.screener.in/company/{name}/consolidated/"
     try:
