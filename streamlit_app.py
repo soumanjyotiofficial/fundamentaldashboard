@@ -98,6 +98,7 @@ if submit_button:
             
     else:
         cols3, cols4 =st.columns(2)
-        st.title(f"Company : {name.upper()}")
-        sales_data(data)
+        with cols3:
+            st.title(f"{name.upper()} : {data}")
+            sales_data(data)
             
