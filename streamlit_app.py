@@ -94,6 +94,6 @@ if submit_button:
         cols3, cols4 =st.columns(2)
 
         with cols3:
-            st.title(f"{name.upper()}")
+            st.title(f"{name.upper()} : {data}")
             sales_data(data)
-            
+            s
