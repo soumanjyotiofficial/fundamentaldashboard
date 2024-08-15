@@ -14,7 +14,7 @@ st.markdown("""
             }
             </style>
             
-            """)
+            """ , unsafe_allow_html=True)
 
 def extracting_date(name):
     url = f"https://www.screener.in/company/{name}/consolidated/"
