@@ -99,7 +99,7 @@ with col2:
 if submit_button:
     data = extracting_date(name)
     st.dataframe(data[0])
-
+    st.markdown(f"""<script>alert({type(name)})</script>""", unsafe_allow_html=True)
     cols3, cols4 =st.columns(2)
 
     with cols3:
