@@ -9,15 +9,6 @@ st.markdown("""
             #MainMenu{
             visibility:hidden
             }
-            #stActionButtonLabel{
-            visibility:hidden
-            }
-            .st-emotion-cache-30do4w .e3g6aar1{
-            visibility:hidden
-            }
-            header {
-            visibility:hidden
-            }
             </style>
             
             """, unsafe_allow_html=True)
@@ -98,8 +89,8 @@ with col2:
 
 if submit_button:
     data = extracting_date(name)
-    st.dataframe(data[0])
-    st.markdown(f"""<script>alert({type(name)})</script>""", unsafe_allow_html=True)
+    #st.markdown(f"""<script>alert({type(name)})</script>""", unsafe_allow_html=True)
+    st.write(data)
     cols3, cols4 =st.columns(2)
 
     with cols3:
