@@ -3,18 +3,16 @@ import numpy as np
 import streamlit as st
 import requests as req
 import plotly.express as xp
-
-
+title = st.set_page_config(page_icon="", page_title="Dashboard", layout="wide")
 st.markdown("""
-
-
             <style>
             #Menu{
             visibility:hidden
             }
             </style>
             
-            """ , unsafe_allow_html=True)
+            """, unsafe_allow_html=True)
+
 
 def extracting_date(name):
     url = f"https://www.screener.in/company/{name}/consolidated/"
@@ -64,7 +62,7 @@ def sales_data_line(data):
     st.plotly_chart(fig)
 
 
-title = st.set_page_config(page_icon="", page_title="Dashboard", layout="wide")
+
 
 
 header = st.title("Fundamanetal Dashboard")
