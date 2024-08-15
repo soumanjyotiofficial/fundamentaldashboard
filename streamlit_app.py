@@ -90,10 +90,14 @@ with col2:
 if submit_button:
     data = extracting_date(name)
     #st.markdown(f"""<script>alert({type(name)})</script>""", unsafe_allow_html=True)
-    if type(data) !=str(""):
+    if type(data) ==str(""):
         cols3, cols4 =st.columns(2)
 
         with cols3:
             st.title(f"{name.upper()} : {data}")
-            sales_data(data)
-            s
+            
+    else:
+        cols3, cols4 =st.columns(2)
+        st.title(f"Company : {name.upper()}")
+        sales_data(data)
+            
