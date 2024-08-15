@@ -98,7 +98,7 @@ with col2:
 
 if submit_button:
     data = extracting_date(name)
-    
+    st.dataframe(data[0])
 
     cols3, cols4 =st.columns(2)
 
